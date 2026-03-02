@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelVibe | Wallpapers de Productividad</title>
+    <style>
+        :root {
+            --primary: #2d3436;
+            --accent: #00b894;
+            --bg: #f9f9f9;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); margin: 0; color: var(--primary); }
+        header { text-align: center; padding: 50px 20px; background: white; border-bottom: 1px solid #eee; }
+        h1 { margin: 0; font-size: 2.5rem; letter-spacing: -1px; }
+        p { color: #636e72; }
+        
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        
+        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card img { width: 100%; height: 400px; object-fit: cover; }
+        .card-content { padding: 20px; text-align: center; }
+        
+        .btn { display: inline-block; padding: 12px 25px; background: var(--accent); color: white; text-decoration: none; border-radius: 25px; font-weight: bold; margin-top: 10px; }
+        .btn-premium { background: var(--primary); }
+
+        footer { text-align: center; padding: 40px; color: #b2bec3; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>PixelVibe ✨</h1>
+    <p>Wallpapers diseñados para tu enfoque y productividad.</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="URL_DE_TU_IMAGEN_AQUI" alt="Wallpaper Zen">
+        <div class="card-content">
+            <h3>Zen Setup Green</h3>
+            <p>Gratis para uso personal</p>
+            <a href="#" class="btn">Descargar Gratis</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="URL_DE_TU_IMAGEN_AQUI" alt="Pack Premium">
+        <div class="card-content">
+            <h3>Pack Productividad (20+)</h3>
+            <p>Todos los colores y layouts</p>
+            <a href="#" class="btn btn-premium">Comprar Pack - $2.99</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 PixelVibe Studio. Hecho para creadores.
+</footer>
+
+</body>
+</html>
