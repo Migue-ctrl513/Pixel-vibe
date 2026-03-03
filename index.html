@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Pixel Vibe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Vibe | Lobo Neón</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #050505; /* Fondo negro profundo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .wolf-neon {
+            font-size: 150px; /* Lobo Gigante */
+            color: #fff;
+            /* Efecto de brillo neón azul */
+            text-shadow: 
+                0 0 10px #fff,
+                0 0 20px #00d2ff,
+                0 0 40px #00d2ff,
+                0 0 80px #00d2ff;
+            animation: flicker 1.5s infinite alternate;
+            user-select: none;
+        }
+        h1 {
+            color: #00d2ff;
+            margin-top: 30px;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            text-shadow: 0 0 15px #00d2ff;
+            font-weight: 900;
+        }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            color: #333;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+        }
+        /* Animación de parpadeo neón */
+        @keyframes flicker {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #00d2ff, 0 0 40px #00d2ff, 0 0 80px #00d2ff;
+                opacity: 1;
+            }
+            20%, 22%, 24%, 55% {
+                text-shadow: none;
+                opacity: 0.3;
+            }
+        }
+    </style>
 </head>
-<body style="background: black; color: cyan; text-align: center; font-family: sans-serif;">
-    <h1>🐺 PROYECTO: PIXEL VIBE</h1>
-    <p>La página está cargando correctamente.</p>
+<body>
+    <div class="container">
+        <div class="wolf-neon">🐺</div>
+        <h1>PIXEL VIBE</h1>
+        <div class="footer">BY MIGUE-CTRL513</div>
+    </div>
 </body>
 </html>
